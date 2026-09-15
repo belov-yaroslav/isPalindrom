@@ -1,4 +1,4 @@
-package com.testik;
+package com.solves;
 
 import java.util.Scanner;
 
