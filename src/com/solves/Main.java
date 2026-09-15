@@ -10,21 +10,21 @@ public class Main
         Scanner input = new Scanner(System.in);
         System.out.print("Введите текст: ");
         String a = input.nextLine();
-        String lowA = a.toLowerCase();
-        System.out.print(isPalindrome(lowA));
+        String lowerA = a.toLowerCase();
+        System.out.print(isPalindrome(lowerA));
     }
 
-    public static boolean isPalindrome(String abc)
+    public static boolean isPalindrome(String palindrome)
     {
         int count = 0;
-        for (int len = abc.length() - 1; len >= 0; len--)
+        for (int len = palindrome.length() - 1; len >= 0; len--)
         {
-            if(abc.charAt(count) == abc.charAt(len)){
+            if(palindrome.charAt(count) == palindrome.charAt(len)){
                 count++;
             }
         }
 
-        if(count == abc.length()){
+        if (count == palindrome.length()){
             return true;
         }
 
